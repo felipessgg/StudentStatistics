@@ -15,7 +15,9 @@ public class FundamentalsA1_MeanVar
         double max = 0;
         
         double sum = 0;
+        double sum2 = 0;
         double mean = 0;
+        double var = 0;
         
         System.out.print("Enter number of marks: ");
         N = scanner.nextInt();
@@ -33,9 +35,17 @@ public class FundamentalsA1_MeanVar
             
             sum += student_marks[i];
         }
+        
         mean = sum/N;
         
-        System.out.println("Max Mark: " + max);
-        System.out.println("Min Mark: " + min);
+        sum2 = 0;
+        for (int i = 0; i < N; i++){
+            sum2 += (student_marks[i] - mean)*(student_marks[i] - mean);
+        }
+        
+        var = sum2/N;
+        
+        System.out.println("Mean: " + mean);
+        System.out.println("Variance: " + var);
     }
 }
