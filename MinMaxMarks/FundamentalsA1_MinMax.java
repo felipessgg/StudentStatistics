@@ -9,6 +9,9 @@ import java.util.Scanner;
 public class FundamentalsA1_MinMax
 {
     public static void main(String[] args){
-        
+        Scanner scanner = new Scanner(System.in);
+        int N;
+        double min = 31;
+        double max = 0;
     }
 }
