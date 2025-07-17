@@ -14,6 +14,9 @@ public class FundamentalsA1_MeanVar
         double min = 31;
         double max = 0;
         
+        double sum = 0;
+        double mean = 0;
+        
         System.out.print("Enter number of marks: ");
         N = scanner.nextInt();
         double[] student_marks = new double[N];
@@ -27,7 +30,10 @@ public class FundamentalsA1_MeanVar
             }else if (student_marks[i] > max){
                 max = student_marks[i];
             }
+            
+            sum += student_marks[i];
         }
+        mean = sum/N;
         
         System.out.println("Max Mark: " + max);
         System.out.println("Min Mark: " + min);
