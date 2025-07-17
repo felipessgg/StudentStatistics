@@ -13,5 +13,9 @@ public class FundamentalsA1_MinMax
         int N;
         double min = 31;
         double max = 0;
+        
+        System.out.print("Enter number of marks: ");
+        N = scanner.nextInt();
+        double[] student_marks = new double[N];
     }
 }
